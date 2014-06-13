@@ -15,7 +15,8 @@ var simquadrat = require('simquadrat.js');
 var sq = new simquadrat('USERMAIL', 'PASSWORD');
 
 sq.evn(0)
-.then(console.log)``
+.then(console.log)
+```
 
 ## License
 Copyright © 2014 silsha &lt;hallo@silsha.me&gt;
