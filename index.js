@@ -46,14 +46,19 @@ var simquadrat = function(username, password){
             zeilen.forEach(function(elem, i){
                 month = pad(date.getMonth(), 2)
                 i = pad(i, 5);
+                price = parseFloat(elem[4].replace(/€/g, '').replace(',', '.'));
+                number = elem[2].replace(/\-/g, '');
+                
+                var sp = elem[0].match(/\d+/g);
+                var time = new Date(+sp[2], +sp[1], +sp[0], +sp[3]-2, +sp[4]);
 
                 var element = {
-                    id: date.getFullYear() + "" + month + "" + i,
-                    time: elem[0],
+                    id: parseInt(date.getFullYear() + "" + month + "" + i),
+                    time: time,
                     device: elem[1],
-                    number: elem[2],
+                    number: number,
                     duration: elem[3],
-                    price: elem[4]
+                    price: price
                 };
                 data.push(element);
             })
