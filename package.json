@@ -1,0 +1,29 @@
+{
+  "name": "simquadrat.js",
+  "version": "1.0.0",
+  "description": "Request simquadrat data via node.js",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "q": "^1.0.1",
+    "request": "^2.36.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silsha/simquadrat.js"
+  },
+  "keywords": [
+    "simquadrat",
+    "phone"
+  ],
+  "author": "silsha <hallo@silsha.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silsha/simquadrat.js/issues"
+  },
+  "homepage": "https://github.com/silsha/simquadrat.js"
+}
